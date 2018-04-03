@@ -6,7 +6,7 @@
 	<groupId>com.github.pvasilyev</groupId>
 	<artifactId>spring-boot-playground</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>spring-boot-playground</name>
 	<description>Demo project for Spring Boot</description>
@@ -32,6 +32,18 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<!--<exclusions>-->
+				<!--<exclusion>-->
+					<!--<groupId>org.springframework.boot</groupId>-->
+					<!--<artifactId>spring-boot-starter-tomcat</artifactId>-->
+				<!--</exclusion>-->
+			<!--</exclusions>-->
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<scope>compile</scope>
 		</dependency>
 
 		<dependency>
@@ -47,6 +59,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>spring-boot-playground</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
