@@ -1,4 +1,4 @@
-package com.github.pvasilyev.springbootplayground;
+package com.github.pvasilyev.springbootplayground.dto;
 
 public class Greeting {
 

@@ -1,5 +1,6 @@
-package com.github.pvasilyev.springbootplayground;
+package com.github.pvasilyev.springbootplayground.controller;
 
+import com.github.pvasilyev.springbootplayground.dto.Greeting;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
